@@ -1,0 +1,30 @@
+libname demo '/home/u60754633/';
+data trail2;
+set demo.trail;
+mul=(salary*2);
+run;
+
+proc print data=trail2;
+title My First Result from Copied Database;
+run;
+
+proc gchart data=trail2;
+title My First Chart;
+vbar mul;
+run;
+
+
+libname demo '/home/u60754633/';
+data trail2;
+set demo.trail;
+mul=(salary*2);
+run;
+
+proc print data=trail2;
+title My First Result from Copied Database;
+run;
+
+proc gchart data=trail2;
+title My First Chart;
+vbar mul;
+run;
